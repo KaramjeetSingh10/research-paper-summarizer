@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://researchai-backend-rja3.onrender.com";
 
 const DEFAULT_SUGGESTED_QUESTIONS = [
   "What is the main objective of this research?",
